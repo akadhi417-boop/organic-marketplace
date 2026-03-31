@@ -1,0 +1,153 @@
+{
+  "theme": {
+    "default_mode": "light",
+    "strategy": "Light mode heavily preferred for organic/fresh feel. Dark mode reserved for Footer or specific high-contrast 'Night Market' sections."
+  },
+  "typography": {
+    "font_family": {
+      "headings": {
+        "name": "Playfair Display",
+        "type": "Serif",
+        "usage": "All H1-H3 headings. Adds trust, tradition, and an editorial feel.",
+        "fallback": "serif"
+      },
+      "body": {
+        "name": "Manrope",
+        "type": "Sans-serif",
+        "usage": "Body text, UI elements, buttons. Clean, modern, highly legible.",
+        "fallback": "sans-serif"
+      },
+      "accent": {
+        "name": "Caveat",
+        "type": "Handwriting",
+        "usage": "Small signatures, 'Farmer's Note' labels, organic badges.",
+        "fallback": "cursive"
+      }
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "text-sm font-medium tracking-wide uppercase text-primary/80"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "hex": "#2F5233",
+        "name": "Deep Moss Green",
+        "usage": "Main actions, buttons, active states. Represents growth and freshness.",
+        "hsl": "127 27% 25%"
+      },
+      "secondary": {
+        "hex": "#B05C3C",
+        "name": "Terracotta",
+        "usage": "Accents, sale tags, 'Urgent' actions. Earthy warmth.",
+        "hsl": "17 49% 46%"
+      },
+      "background": {
+        "hex": "#F9F8F4",
+        "name": "Bone White",
+        "usage": "Main background. NEVER pure white (#FFFFFF) except for card surfaces.",
+        "hsl": "48 20% 96%"
+      },
+      "surface": {
+        "hex": "#FFFFFF",
+        "name": "Pure White",
+        "usage": "Cards, input fields, modal backgrounds.",
+        "hsl": "0 0% 100%"
+      },
+      "text": {
+        "main": "#1A1A1A",
+        "muted": "#5A5A5A",
+        "hsl_main": "0 0% 10%"
+      },
+      "border": {
+        "hex": "#E5E0D8",
+        "name": "Organic Line",
+        "usage": "Dividers, inputs.",
+        "hsl": "38 15% 87%"
+      }
+    },
+    "rules": "Avoid neon greens. Use matte finishes. Textures (grain) > Gradients."
+  },
+  "layout": {
+    "grid_system": {
+      "marketing": "Bento Grid (Mode A). Asymmetric. Mix of 4x4, 2x4, 2x2 cells.",
+      "listing": "Masonry or flexible grid with 'breathing room' (gap-8+).",
+      "dashboard": "High Density Grid (Mode B). Compact but legible."
+    },
+    "spacing": {
+      "section_padding": "py-24 md:py-32",
+      "container_padding": "px-6 md:px-12",
+      "element_gap": "gap-6 md:gap-10"
+    },
+    "container": "max-w-7xl mx-auto"
+  },
+  "components": {
+    "buttons": {
+      "style": "rounded-full px-8 py-6 font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1",
+      "primary": "bg-primary text-white hover:bg-primary/90",
+      "secondary": "bg-[#F4EFE6] text-primary border border-primary/20 hover:border-primary/50"
+    },
+    "cards": {
+      "style": "bg-white rounded-2xl border border-border/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] transition-all duration-300",
+      "product_card": "Aspect ratio 3:4 for images. Minimal text below. 'Add' button floats on image hover.",
+      "feature_card": "Padding p-8 or p-10. Icon left-aligned."
+    },
+    "inputs": {
+      "style": "bg-white border-border rounded-lg h-12 px-4 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add a subtle SVG noise overlay (opacity 0.03) to the main background to simulate paper/organic texture.",
+    "shadows": "Soft, diffused, colored shadows (e.g., shadow-green-900/5).",
+    "border_radius": "md: rounded-xl, lg: rounded-2xl, full: rounded-full. Avoid sharp edges unless for specific brutalist sections.",
+    "icons": "Use 'Phosphor Icons' (Duotone or Regular) or 'Lucide' with thin strokes."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1754891144113-8a8d092a7dbf",
+      "desc": "Fresh vegetables variety spread",
+      "usage": "Hero section background or split visual"
+    },
+    "farmer_highlight": {
+      "url": "https://images.unsplash.com/photo-1670012015063-14a6f2102a50",
+      "desc": "Authentic farmer holding lettuce",
+      "usage": "About Us or 'Meet Your Farmer' section"
+    },
+    "organic_landscape": {
+      "url": "https://images.unsplash.com/photo-1666631740055-8d3a093960b5",
+      "desc": "Sunset over farm field",
+      "usage": "Footer background or Sustainability section"
+    },
+    "product_fruit_example": {
+      "url": "https://images.unsplash.com/photo-1679942345838-91212aedb6e2",
+      "desc": "Close up fresh fruit",
+      "usage": "Product category example"
+    },
+    "product_vegetable_example": {
+      "url": "https://images.unsplash.com/photo-1768405741410-71317eceb565",
+      "desc": "Hand holding zucchini",
+      "usage": "Product category example"
+    }
+  },
+  "accessibility": {
+    "contrast_check": "Ensure primary green (#2F5233) is used on light backgrounds. Use lighter green (#4ADE80) only for dark mode accents.",
+    "data_test_ids": "REQUIRED. All interactive elements must have 'data-testid'. Format: 'component-role-context' (e.g., 'button-submit-login').",
+    "focus_states": "Visible focus rings are mandatory. Use 'ring-offset-2 ring-2 ring-primary'."
+  },
+  "universal_guidelines": {
+    "anti_slop": "Do not use 'Inter' for headings. Do not center everything. Create visual tension with asymmetry.",
+    "motion": "Use 'AnimatePresence' for page transitions. Stagger list items. Hover effects on everything interactive.",
+    "toast": "Use 'sonner' for notifications."
+  },
+  "instructions_to_main_agent": [
+    "1. Update tailwind.config.js to include the new colors (moss, terracotta, bone) and fonts (Playfair Display, Manrope).",
+    "2. Install 'lucide-react' or 'phosphor-react' for icons.",
+    "3. Apply a global body background color of #F9F8F4 (Bone White).",
+    "4. Build the 'Bento Grid' component for the home page categories.",
+    "5. Ensure the 'Farmer Dashboard' uses the High Density grid layout, while the 'Customer Storefront' uses the Marketing/Masonry layout."
+  ]
+}
